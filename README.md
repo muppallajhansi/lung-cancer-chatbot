@@ -18,9 +18,7 @@ It is an end-to-end intelligent medical assistant that detects lung cancer from 
 ---------------------------------------------------------
 
 ## Project Structure
-
 lung-cancer-chatbot/
-│
 ├── docs/ → Documentation and setup
 ├── demos/ → Demo video
 ├── models/ → Pre-trained models
@@ -28,9 +26,7 @@ lung-cancer-chatbot/
 ├── data/ → Final dataset
 ├── results/ → Prediction results, logs
 ├── presentation/ → Slides and reports
-├── .gitattributes → Git LFS configuration
-├── .gitignore → Git ignore rules
-└── README.md → Project overview 
+├── README.md → Project overview 
 
 
 ---------------------------------------------------------
