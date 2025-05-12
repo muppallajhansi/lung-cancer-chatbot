@@ -19,35 +19,14 @@ An end-to-end intelligent medical assistant that detects lung cancer from CT sca
 ##  Project Structure
 
 lung-cancer-chatbot/
-│
-├── docs/ → Documentation and setup
-│   ├── Documentation Guide.txt
-│   ├── Installation Guide.txt
-│   └── requirements.txt
-│
-├── demos/ → Demo video
-│   └── chatbot_and_models_demo.mp4
-│
-├── models/ → Pre-trained models
-│   ├── swin_lung_cancer.pth
-│   └── vit_lung_classifier.pth
-│
-├── src/ → Python source files
-│   ├── app.py
-│   ├── swin transformer.py
-│   └── vit.py
-│
-├── data/ → Final dataset
-│
-├── results/ → Prediction results, logs
-│
-├── presentation/ → Slides and reports
-│   └── Lung Cancer Chatbot.ppt
-│
-├── .gitattributes → Git LFS configuration
-├── .gitignore → Git ignore rules
-└── README.md → Project overview
-
+├── docs/           → Documentation and setup
+├── demos/          → Demo videos
+├── models/         → Pre-trained models
+├── src/            → Python source files
+├── data/           → Final dataset
+├── results/        → Prediction results, logs
+├── presentation/   → Slides and reports
+└── README.md       → Project overview
 
 ---
 
