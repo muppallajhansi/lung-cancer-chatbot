@@ -18,6 +18,7 @@ An end-to-end intelligent medical assistant that detects lung cancer from CT sca
 
 ##  Project Structure
 
+```
 lung-cancer-chatbot/
 ├── docs/           → Documentation and setup
 ├── demos/          → Demo videos
@@ -27,6 +28,7 @@ lung-cancer-chatbot/
 ├── results/        → Prediction results, logs
 ├── presentation/   → Slides and reports
 └── README.md       → Project overview
+```
 
 ---
 
