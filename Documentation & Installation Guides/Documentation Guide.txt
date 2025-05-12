@@ -1,0 +1,100 @@
+Project Documentation Guide
+===========================
+
+Project Title:
+--------------
+AI Multilingual Chatbot for Lung Cancer Detection
+
+Group Details:
+--------------
+Course: DTSC5082 – Data Modeling for Information Professionals
+Section: 020
+Group Number: 19
+Group Members:
+- Jhansi Muppalla
+- Nitya Sai Mounisha Korada
+- Jyotheeswar Mandala
+- Venkata Surya Mouli
+- Sree Vamsi Mallady
+
+Project Overview:
+-----------------
+
+The goal of this project is to introduce a multilingual AI chatbot that is designed to detect lung cancer from the CT scan images using Swim Transformer 
+and generate patient friendly medical reports. Our project supports real-time interaction in more than 50 languages using Meta's NLLB and answer health
+related queries via BioBERT.
+
+Files Included:
+---------------
+- Demo Video folder                         : Demos of Chatbot, Swim Transformer and Vit Lung Classifer Code 
+- Swim_Transformer(lung_cancer_detection).py: Lung Cancer detection using Swin Transformer Model 
+- ViT.py                                    : Vision Transformer to classify medical/non medical images  
+- app.py                                    : Streamlit web app integrating Swin Transformer, CLIP, BioBERT, NLLB
+- DTSC5082.020_Group19_Project_PPT.pptx     : Final presentation slide deck
+- requirements.txt                          : Required Python dependencies
+- Installation Guide.txt                    : Step-by-step guide to run the project
+- final_dataset.csv                         : Dataset of preprocessed lung CT scan images and malignancy scores
+- predictions.csv                           : Output predictions from the trained model
+
+
+Tools & Technologies Used:
+--------------------------
+- Python 3.10+
+- Libraries: PyTorch, Transformers, Streamlit, OpenCV, ReportLab, LangDetect
+- Models:
+  - Swin Transformer – for malignancy score prediction
+  - CLIP + ViT – for image filtering and classification
+  - BioBERT – for medical Q&A
+  - Meta NLLB-200 – for multilingual translation
+
+Installation Guide:
+-------------------
+Prerequisites:
+- Python installed (version 3.9 or above)
+- pip package manager
+
+Steps:
+1. Install dependencies:
+   pip install -r requirements.txt
+   pip install streamlit
+
+2. Place Trained Models:
+   Ensure the following models are placed in the models/ folder:
+   - swin_lung_cancer.pth
+   - vit_lung_classifier.pth
+
+3. Run the Application:
+   streamlit run app.py
+
+Model Summary:
+--------------
+Model             | Task                                 | Metric | Score
+------------------|--------------------------------------|--------|-------
+Swin Transformer  | Malignancy Score Prediction          | MSE    | 0.0192
+                  |                                      | MAE    | 0.0500
+                  |                                      | R²     | 0.9872
+ViT + CLIP        | Lung CT Image Validation             | Binary | Accurate Filtering
+BioBERT           | Medical Q&A                          | N/A    | Contextual responses
+NLLB              | Multilingual Translation             | N/A    | 50+ Languages
+
+How It Works:
+-------------
+1. Upload CT Scan: Users upload a CT scan. The system filters non-lung images using CLIP and validates via ViT.
+2. Malignancy Prediction: Swin Transformer processes valid images and outputs a malignancy risk score.
+3. Report Generation: A human-friendly report is generated and translated using NLLB to the user’s native language.
+4. Q&A Interaction: Users can ask medical questions, which are answered via BioBERT or FAQ logic.
+5. Export Option: The report can be downloaded as a PDF.
+
+Dataset Description:
+--------------------
+- Source: LIDC-IDRI dataset
+- Subset Used: First 100 patient cases
+- Preprocessing:
+  - DICOM → PNG conversion
+  - Histogram equalization
+  - Malignancy score averaging
+  - Resized to 224x224 and normalized
+- Split: 70% Training, 15% Validation, 15% Testing
+
+
+

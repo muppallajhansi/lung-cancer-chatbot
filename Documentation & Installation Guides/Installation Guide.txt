@@ -1,0 +1,32 @@
+Installation Guide
+
+Prerequisites:
+Make sure python is installed on your device
+open power shell 
+pip install -r requirements .txt - run this to install all the required libraries
+pip install streamlit (If not installed) 
+
+************************************
+Model Used:
+Used swin_t for malignancy score calculation
+vit_b_16 for lung scan classification
+CLIP for filtering non-medical images
+BioBERT for medical Q&A
+NLLB for multilingual translation.
+
+
+************************************
+
+Placed the trained model in models/ folder.
+NOTE: ViT model was trained with a very small dataset.
+
+************************************
+
+Launch the powershell
+Type streamlit run app.py and hit enter.
+
+************************************
+
+Dataset Link: https://drive.google.com/drive/folders/1D5W9J_OhkXAgWEQo7ecsmSWAm5IhDKvH?usp=sharing
+Swin Transformer.py file:  https://colab.research.google.com/drive/1726G3ePjVZQF-3Lsiyz4tCEIpH2FZrac?usp=sharing
+ViT.py file: https://colab.research.google.com/drive/1U2Mi_8mBOKiskXgYl_f-THEm9UAuqo15?usp=sharing
