@@ -1,9 +1,14 @@
+# Auto handle text files
+* text=auto
+
+# Git LFS tracking for large files
 *.pptx filter=lfs diff=lfs merge=lfs -text
 *.csv filter=lfs diff=lfs merge=lfs -text
 *.h5 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+
+# Specific files (redundant since *.mp4 and *.pth already cover these, but if you want to be explicit, you can include them)
 Models/swin_lung_cancer.pth filter=lfs diff=lfs merge=lfs -text
 Models/vit_lung_classifier.pth filter=lfs diff=lfs merge=lfs -text
-Demos[[:space:]]Videos/DTSC5082.020_Group19_Project_Swin_Transformer_Video.mp4 filter=lfs diff=lfs merge=lfs -text
-*.pth filter=lfs diff=lfs merge=lfs -text
-Demo[[:space:]]Videos/DTSC5082.020_Group19_Project_Swin_Transformer_Video.mp4 filter=lfs diff=lfs merge=lfs -text
+Demo Videos/DTSC5082.020_Group19_Project_Swin_Transformer_Video.mp4 filter=lfs diff=lfs merge=lfs -text
