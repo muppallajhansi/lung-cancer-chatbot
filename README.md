@@ -1,10 +1,9 @@
-# lung-cancer-chatbot
-Multilingual AI chatbot for lung cancer detection using CT scans.
-# 🧠 Lung Cancer Detection Chatbot
 
-An end-to-end intelligent medical assistant that detects lung cancer from CT scan images and generates multilingual, patient-friendly medical reports. Built using deep learning, NLP, and image validation models, this chatbot improves early detection and accessibility for patients worldwide.
+#  Lung Cancer Detection Chatbot
 
------------------------------------------------------------
+It is an end-to-end intelligent medical assistant that detects lung cancer from CT scan images and generates multilingual, patient-friendly medical reports. Built using deep learning, NLP, and image validation models, this chatbot improves early detection and accessibility for patients worldwide.
+
+-----------------------------------------------------
 
 ## Features
 
@@ -18,34 +17,17 @@ An end-to-end intelligent medical assistant that detects lung cancer from CT sca
 
 ---------------------------------------------------------
 
-## 📁 Project Structure
+## Project Structure
 
 lung-cancer-chatbot/
 │
 ├── docs/ → Documentation and setup
-│ ├── Documentation Guide.txt
-│ ├── Installation Guide.txt
-│ └── requirements.txt
-│
 ├── demos/ → Demo video
-│ └── chatbot_and_models_demo.mp4
-│
 ├── models/ → Pre-trained models
-│ ├── swin_lung_cancer.pth
-│ └── vit_lung_classifier.pth
-│
 ├── src/ → Python source files
-│ ├── app.py
-│ ├── swin transformer.py
-│ └── vit.py
-│
 ├── data/ → Final dataset
-│
 ├── results/ → Prediction results, logs
-│
 ├── presentation/ → Slides and reports
-│ └── Lung Cancer Chatbot.ppt
-│
 ├── .gitattributes → Git LFS configuration
 ├── .gitignore → Git ignore rules
 └── README.md → Project overview 
@@ -77,13 +59,13 @@ lung-cancer-chatbot/
 
 ## 🚀 How to Run the Project
 
-### 1. Clone the Repository 
+## 1. Clone the Repository 
 
 git clone https://github.com/<your-username>/lung-cancer-chatbot.git
 cd lung-cancer-chatbot
 
 
-### 2. Install Dependencies 
+## 2. Install Dependencies 
 
 python -m venv venv
 # On Windows:
@@ -91,12 +73,10 @@ venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
 
-### 3. Run the Application 
+## 3. Run the Application 
 
 python src/app.py
 
-
-Visit http://localhost:5000 in your browser to use the chatbot.
 
 ---------------------------------------------------------
 
